@@ -70,17 +70,20 @@ color:#FFD700;
 
 .cards{
 display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
-}
+margin-top:25px;
+} 
 
 .card{
 background:#1e293b;
-padding:20px;
-border-radius:15px;
+padding:25px;
+border-radius:18px;
 text-align:center;
 border:1px solid #334155;
-}
-
+transition:0.3s;
+cursor:pointer;
+} 
 .card h3{
 margin:15px 0;
 color:#FFD700;
@@ -118,4 +121,9 @@ font-weight:600;
 
 .menu a:hover{
 color:#FFD700;
+} 
+.card:hover{
+transform:translateY(-8px);
+border-color:#FFD700;
+box-shadow:0 10px 30px rgba(255,215,0,.2);
 } 
