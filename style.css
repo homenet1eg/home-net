@@ -1,9 +1,241 @@
+/* ==========================
+   Home Net V3
+========================== */
 
-body{font-family:Arial,sans-serif;background:#0f172a;color:#fff}
-.navbar{box-shadow:0 2px 8px rgba(0,0,0,.3)}
-.card{border:1px solid #d4af37;border-radius:16px;transition:.3s;background:#1e293b}
-.card:hover{transform:translateY(-6px);box-shadow:0 8px 20px rgba(0,0,0,.35)}
-.text-warning{color:#ffd54a!important}
-.btn-success{border-radius:30px;padding:.8rem 1.6rem}
-footer{background:#111827}
-.whatsapp-float{position:fixed;left:20px;bottom:20px;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#25D366;color:#fff;text-decoration:none;font-size:28px}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Cairo',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#08111f;
+color:#fff;
+line-height:1.8;
+overflow-x:hidden;
+}
+
+/* Navbar */
+
+.navbar{
+background:rgba(10,20,35,.95);
+backdrop-filter:blur(10px);
+padding:15px 0;
+box-shadow:0 5px 20px rgba(0,0,0,.3);
+}
+
+.navbar-brand{
+font-size:28px;
+font-weight:800;
+}
+
+.nav-link{
+color:#fff !important;
+margin-right:18px;
+font-weight:600;
+transition:.3s;
+}
+
+.nav-link:hover{
+color:#FFD54A !important;
+}
+
+/* Hero */
+
+.hero{
+
+min-height:100vh;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+text-align:center;
+
+background:
+linear-gradient(rgba(5,15,30,.82),rgba(5,15,30,.88)),
+url("assets/hero.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+padding:100px 20px;
+
+}
+
+.hero h1{
+
+font-size:70px;
+
+font-weight:800;
+
+color:#FFD54A;
+
+margin-bottom:15px;
+
+}
+
+.hero h2{
+
+font-size:34px;
+
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+max-width:700px;
+
+margin:auto;
+
+font-size:20px;
+
+color:#ddd;
+
+}
+
+.hero-buttons{
+
+margin-top:40px;
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+/* Buttons */
+
+.btn{
+
+border-radius:50px;
+
+padding:14px 35px;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+.btn-warning{
+
+background:#FFD54A;
+
+border:none;
+
+color:#111;
+
+}
+
+.btn-warning:hover{
+
+transform:translateY(-3px);
+
+}
+
+.btn-success:hover{
+
+transform:translateY(-3px);
+
+}
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f5f7fb;
+  color: #111;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #e60000, #ff4d4d);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+/* Offers Section */
+.container {
+  width: 90%;
+  margin: 20px auto;
+}
+
+.card {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-right: 5px solid #e60000;
+}
+
+.card h2 {
+  color: #e60000;
+  margin-bottom: 8px;
+}
+
+.card p {
+  margin: 5px 0;
+  font-size: 15px;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #e60000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  background: #cc0000;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+  background: #111;
+  color: #fff;
+  }
+// تأثير بسيط عند الضغط على زر العرض
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll(".btn");
+
+  buttons.forEach(btn => {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      // رسالة تأكيد بسيطة
+      alert("تم اختيار العرض بنجاح 🔥 هنكلمك قريب للتفعيل");
+
+      // تأثير بصري خفيف
+      btn.innerText = "تم الاختيار ✔";
+      btn.style.background = "#28a745";
+    });
+  });
+});
