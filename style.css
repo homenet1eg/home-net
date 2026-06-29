@@ -223,3 +223,13 @@ grid-template-columns:1fr;
     width:100%;
     text-align:center;
 } 
+.features{
+    background:#111827;
+    padding:70px 20px;
+}
+
+.features h2{
+    text-align:center;
+    color:#FFD700;
+    margin-bottom:35px;
+} 
