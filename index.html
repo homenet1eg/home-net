@@ -1,18 +1,14 @@
 <!DOCTYPE html>
-<html lang="ar">
-<head>
-  <meta charset="UTF-8">
-  <title>Home Net</title>
-</head>
+<html>
 <body>
 
-<h2>Home Net</h2>
+<button onclick="alert('vodafone')">فودافون</button>
 
-<button onclick="showOffers('vodafone')">فودافون</button>
-<button onclick="showOffers('orange')">أورانج</button>
+<script>
+function showOffers(){
+  document.body.innerHTML += "<p>باقات اشتغلت ✅</p>";
+}
+</script>
 
-<div id="offers"></div>
-
-<script src="script.js"></script>
 </body>
 </html>
