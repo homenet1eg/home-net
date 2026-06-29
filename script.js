@@ -24,3 +24,4 @@ function showOffers(company) {
     offersDiv.innerHTML += "<p>" + data[i] + "</p>";
   }
 }
+alert("JS شغال ✅");
