@@ -20,7 +20,7 @@ function showOffers(company) {
 
   offersDiv.innerHTML = "";
 
-  data.forEach(item => {
-    offersDiv.innerHTML += "<p>" + item + "</p>";
-  });
+  for (let i = 0; i < data.length; i++) {
+    offersDiv.innerHTML += "<p>" + data[i] + "</p>";
+  }
 }
