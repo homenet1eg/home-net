@@ -194,3 +194,32 @@ grid-template-columns:1fr;
     border-radius:20px;
     box-shadow:0 0 20px rgba(255,215,0,.25);
 } 
+.popular .card{
+    position:relative;
+    overflow:hidden;
+}
+
+.popular .card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    width:5px;
+    height:100%;
+    background:#FFD700;
+}
+
+.popular .card h3{
+    color:#FFD700;
+    margin-bottom:10px;
+}
+
+.popular .card p{
+    color:#d1d5db;
+    margin-bottom:20px;
+}
+
+.popular .btn{
+    width:100%;
+    text-align:center;
+} 
