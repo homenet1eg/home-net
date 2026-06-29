@@ -1,13 +1,38 @@
-// Home Net V1
+const offersDiv = document.getElementById("offers");
 
-console.log("Home Net V1 Loaded");
+function showOffers(company) {
 
-// تأثير بسيط عند الضغط على الأزرار
-document.querySelectorAll(".btn").forEach(btn => {
-    btn.addEventListener("click", function () {
-        this.style.transform = "scale(0.96)";
-        setTimeout(() => {
-            this.style.transform = "scale(1)";
-        }, 120);
-    });
-});
+  let data = [];
+
+  if (company === "vodafone") {
+    data = [
+      { title: "فودافون فليكس", text: "5200 فليكس - 125 جنيه" },
+      { title: "فودافون فليكس", text: "10400 فليكس - 230 جنيه" }
+    ];
+  }
+
+  else if (company === "orange") {
+    data = [
+      { title: "أورانج نت", text: "14 جيجا - 320 جنيه" },
+      { title: "أورانج نت", text: "20 جيجا - 420 جنيه" }
+    ];
+  }
+
+  render(data);
+}
+
+function render(data) {
+  offersDiv.innerHTML = "";
+
+  data.forEach(item => {
+    offersDiv.innerHTML += `
+      <div class="card">
+        <h2>${item.title}</h2>
+        <p>${item.text}</p>
+      </div>
+    `;
+  });
+}
+
+// تشغيل أول ما الصفحة تفتح
+showOffers("vodafone");
