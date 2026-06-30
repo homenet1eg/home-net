@@ -1,223 +1,66 @@
-/* الألوان الأساسية المتفق عليها الهوية الفاخرة */
+/* إعدادات الخط والألوان الأساسية */
 :root {
-    --bg-dark: #0b0b0b;
-    --bg-semi-dark: #121212;
     --gold: #d4af37;
-    --gold-hover: #bfa030;
-    --blue: #007bff;
-    --text-muted: #a0a0a0;
+    --dark: #1a1a1a;
+    --light: #f8f9fa;
 }
 
 body {
-    background-color: var(--bg-dark);
-    color: #ffffff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow-x: hidden;
+    background-color: var(--light);
 }
 
-.text-gold { color: var(--gold) !important; }
-.text-blue { color: var(--blue) !important; }
-.text-light-muted { color: #cccccc; }
-.bg-semi-dark { background-color: var(--bg-semi-dark); }
-
-/* التعديلات الفاخرة للـ Navbar */
+/* تعديل الـ Navbar */
 .navbar {
-    background-color: rgba(11, 11, 11, 0.95) !important;
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(212, 175, 55, 0.1);
-    padding: 15px 0;
-    transition: all 0.3s ease;
+    background-color: var(--dark) !important;
+    border-bottom: 2px solid var(--gold);
 }
-.navbar-brand { font-size: 1.4rem; }
-.nav-link {
-    color: #ffffff !important;
-    margin: 0 5px;
-    font-weight: 500;
-}
-.nav-link:hover, .nav-link.active {
+
+.text-gold {
     color: var(--gold) !important;
 }
-.dropdown-menu {
-    border: 1px solid rgba(212, 175, 55, 0.2);
-}
-.dropdown-menu-item {
-    display: block;
-    width: 100%;
-    padding: 8px 16px;
-    color: #fff;
-    text-decoration: none;
-    text-align: right;
-}
-.dropdown-menu-item:hover {
-    background-color: var(--gold);
-    color: var(--bg-dark);
-}
 
-/* قسم الـ Hero */
-.hero-section {
-    height: 80vh;
-    background: linear-gradient(135deg, rgba(11,11,11,0.95) 40%, rgba(0,123,255,0.15) 100%), url('assets/hero.jpg') center/cover no-repeat;
-    margin-top: 70px;
-}
-
-/* الأزرار الاحترافية */
 .btn-gold {
     background-color: var(--gold);
-    color: var(--bg-dark);
-    font-weight: 600;
-    border: 1px solid var(--gold);
-    transition: all 0.3s ease;
-}
-.btn-gold:hover {
-    background-color: var(--gold-hover);
-    color: var(--bg-dark);
-    transform: translateY(-2px);
-}
-.btn-outline-gold {
-    color: var(--gold);
-    border: 1px solid var(--gold);
-    font-weight: 500;
-}
-.btn-gold:hover {
-    background-color: var(--gold);
-    color: var(--bg-dark);
-}
-.btn-outline-blue {
-    color: #ffffff;
-    border: 1px solid var(--blue);
-}
-.btn-outline-blue:hover {
-    background-color: var(--blue);
-    color: #ffffff;
-}
-
-/* تصميم البطاقات والعروض */
-.offer-card {
-    background-color: var(--bg-semi-dark);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 12px;
-    transition: transform 0.3s ease, border-color 0.3s ease;
-}
-.offer-card:hover {
-    transform: translateY(-8px);
-    border-color: var(--gold);
-}
-.network-badge {
-    display: inline-block;
-    padding: 6px 16px;
-    border-radius: 50px;
+    color: white;
+    border-radius: 30px;
     font-weight: bold;
-    font-size: 0.85rem;
-}
-.badge-vodafone { background-color: #e60000; color: #fff; }
-.badge-orange { background-color: #ff6600; color: #fff; }
-.badge-we { background-color: #5c2c90; color: #fff; }
-.badge-et { background-color: #7da923; color: #fff; }
-.badge-digital { background-color: var(--blue); color: #fff; }
-
-/* خدمات */
-.service-box {
-    background: rgba(255,255,255,0.02);
-    border-radius: 8px;
-    border: 1px solid rgba(255,255,255,0.05);
-    transition: all 0.3s ease;
-}
-.service-box:hover {
-    background: rgba(212,175,55,0.05);
 }
 
-.border-gold-dash {
-    border: 2px dashed var(--gold);
+.btn-gold:hover {
+    background-color: #b8860b;
+    color: white;
 }
 
-/* التقييمات */
-.testimonial-card {
-    border-left: 4px solid var(--gold) !important;
-}
-
-/* الأكورديون للأسئلة الشائعة */
-.accordion-item {
-    border: 1px solid rgba(255,255,255,0.05) !important;
-    margin-bottom: 10px;
-    border-radius: 8px !important;
-    overflow: hidden;
-}
-.accordion-button:not(.collapsed) {
-    background-color: var(--bg-semi-dark);
+.btn-outline-gold {
+    border: 2px solid var(--gold);
     color: var(--gold);
-    box-shadow: none;
-}
-.accordion-button::after {
-    filter: invert(1);
+    font-weight: bold;
 }
 
-/* زر واتساب العائم الفاخر */
-.whatsapp-float {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 30px;
-    left: 30px;
-    background-color: #25d366;
-    color: #FFF;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 2px 2px 3px #999;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
+.btn-outline-gold:hover {
+    background-color: var(--gold);
+    color: white;
+}
+
+/* تنسيق الكروت */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 15px;
     transition: transform 0.3s ease;
 }
-.whatsapp-float:hover {
-    transform: scale(1.1);
-    color: #fff;
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
-/* تأثيرات حركية خفيفة */
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
+/* تنسيق الـ Hero Section */
+.hero-section {
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('assets/bg.jpg'); /* لو عندك صورة خلفية */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    margin-top: 56px;
 }
-.animate-pulse {
-    animation: pulse 2s infinite;
-}
-/* تحسين القائمة في الموبايل */
-@media (max-width: 991px) {
-
-    .navbar-collapse {
-        background: #121212;
-        border: 1px solid rgba(212,175,55,.2);
-        border-radius: 12px;
-        padding: 15px;
-        margin-top: 10px;
-    }
-
-    .navbar-nav .nav-link {
-        padding: 12px;
-        border-bottom: 1px solid rgba(255,255,255,.08);
-    }
-
-    .navbar-nav .nav-link:last-child {
-        border-bottom: none;
-    }
-
-    .dropdown-menu {
-        background: #1a1a1a;
-        border: none;
-        margin-top: 8px;
-    }
-
-    .dropdown-menu-item {
-        padding: 12px;
-        border-radius: 8px;
-    }
-
-    .dropdown-menu-item:hover {
-        background: rgba(212,175,55,.15);
-        color: #d4af37;
-    }
-    }
