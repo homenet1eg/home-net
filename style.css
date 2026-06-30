@@ -1,3 +1,7 @@
+body {
+    font-family: 'Cairo', sans-serif !important;
+}
+
 /* إعدادات الخط والألوان الأساسية */
 :root {
     --gold: #d4af37;
