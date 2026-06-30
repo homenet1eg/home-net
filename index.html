@@ -1,14 +1,258 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Net | عالمك الرقمي</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
-<button onclick="alert('vodafone')">فودافون</button>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="fa-solid fa-bolt text-gold me-2"></i>
+                <span class="fw-bold text-white">Home <span class="text-gold">Net</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">الرئيسية</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="networksDropdown" role="button" data-bs-toggle="dropdown">باقات الإنترنت</a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-menu-item" href="pages/vodafone.html">فودافون</a></li>
+                            <li><a class="dropdown-menu-item" href="pages/orange.html">أورنج</a></li>
+                            <li><a class="dropdown-menu-item" href="pages/we.html">وي WE</a></li>
+                            <li><a class="dropdown-menu-item" href="pages/et.html">اتصالات e&</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="pages/digital.html">الخدمات الرقمية</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">لماذا نحن؟</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faqs">الأسئلة الشائعة</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<script>
-function showOffers(){
-  document.body.innerHTML += "<p>باقات اشتغلت ✅</p>";
-}
-</script>
+    <header class="hero-section d-flex align-items-center text-center">
+        <div class="container position-relative container-custom">
+            <h1 class="display-4 fw-bold mb-3">مرحباً بك في <span class="text-gold">Home Net</span></h1>
+            <p class="lead mb-4 text-light-muted">عالمك الرقمي المتكامل لأقوى عروض وباقات الإنترنت والخدمات الرقمية بنصف السعر!</p>
+            <a href="#offers" class="btn btn-gold btn-lg px-4 py-2 me-2">اكتشف العروض</a>
+            <a href="https://wa.me/201550023008" target="_blank" class="btn btn-outline-blue btn-lg px-4 py-2">تواصل معنا فوراً</a>
+        </div>
+    </header>
 
+    <section id="offers" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">أحدث <span class="text-gold">العروض الحصرية</span></h2>
+                <p class="text-muted">وفر حتى 50% من فاتورة الإنترنت المنزلي مع أقوى العروض</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card offer-card h-100 text-center">
+                        <div class="card-body">
+                            <div class="network-badge badge-vodafone mb-3">Vodafone</div>
+                            <h4 class="card-title fw-bold">خصم 50% على الإنترنت المنزلي</h4>
+                            <p class="card-text text-muted">جدد باقتك بخصومات تبدأ من نصف السعر وبتفعيل رسمي آمن.</p>
+                            <a href="pages/vodafone.html" class="btn btn-outline-gold mt-3">عرض باقات فودافون</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card offer-card h-100 text-center">
+                        <div class="card-body">
+                            <div class="network-badge badge-we mb-3">WE</div>
+                            <h4 class="card-title fw-bold">عرض الصحاب المميز</h4>
+                            <p class="card-text text-muted">خصم إضافي بقيمة 50 جنيه عند تفعيل خطين أو أكثر معاً.</p>
+                            <a href="pages/we.html" class="btn btn-outline-gold mt-3">عرض باقات WE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card offer-card h-100 text-center">
+                        <div class="card-body">
+                            <div class="network-badge badge-digital mb-3">شحن رقمي</div>
+                            <h4 class="card-title fw-bold">اشتراكات المنصات الرقمية</h4>
+                            <p class="card-text text-muted">توفير عالي وشحن فوري لجميع الخدمات والمنصات الترفيهية.</p>
+                            <a href="pages/digital.html" class="btn btn-outline-gold mt-3">استكشف الخدمات</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-5 bg-semi-dark">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">خدماتنا <span class="text-blue">الرقمية</span></h2>
+                <p class="text-muted">نقدم حلولاً متكاملة لتسهيل حياتك الرقمية اليومية</p>
+            </div>
+            <div class="row g-4 text-center">
+                <div class="col-md-3">
+                    <div class="p-4 service-box">
+                        <i class="fa-solid fa-wifi fa-3x text-gold mb-3"></i>
+                        <h5>باقات الإنترنت المنزلي</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-4 service-box">
+                        <i class="fa-solid fa-bolt fa-3x text-blue mb-3"></i>
+                        <h5>تفعيل فوري سريع</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-4 service-box">
+                        <i class="fa-solid fa-shield-halved fa-3x text-gold mb-3"></i>
+                        <h5>ضمان وتأمين رسمي</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-4 service-box">
+                        <i class="fa-solid fa-headset fa-3x text-blue mb-3"></i>
+                        <h5>دعم فني متواصل</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="fw-bold mb-4">لماذا يختار العملاء <span class="text-gold">Home Net</span>؟</h2>
+                    <div class="d-flex mb-3">
+                        <i class="fa-solid fa-circle-check text-blue fa-2x me-3 mt-1"></i>
+                        <div>
+                            <h5>توفير حقيقي وأسعار منافسة</h5>
+                            <p class="text-muted">نضمن لك الحصول على نفس جودة الخدمة ولكن بتكلفة أقل تصل إلى النصف.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <i class="fa-solid fa-circle-check text-blue fa-2x me-3 mt-1"></i>
+                        <div>
+                            <h5>شروط واضحة بدون تعقيد</h5>
+                            <p class="text-muted">كل ما نحتاجه للتفعيل هو بيانات بسيطة لإتمام العملية خلال 24 ساعة فقط.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <i class="fa-solid fa-circle-check text-blue fa-2x me-3 mt-1"></i>
+                        <div>
+                            <h5>ثقة ومصداقية تامة</h5>
+                            <p class="text-muted">نتعامل بشفافية مطلقة مع عملائنا لضمان استقرار الخدمة طوال فترة الاشتراك.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center mt-4 mt-md-0">
+                    <div class="p-5 border-gold-dash rounded">
+                        <i class="fa-solid fa-star fa-4x text-gold mb-3 animate-pulse"></i>
+                        <h3>⚡ التفعيل فوري</h3>
+                        <p class="text-muted">بمجرد طلب الخدمة وتأكيد البيانات يبدأ فريقنا بالعمل فوراً.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-semi-dark">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">آراء <span class="text-gold">عملائنا</span></h2>
+                <p class="text-muted">ماذا يقول مشتركونا عن خدماتنا</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white p-4 h-100 testimonial-card">
+                        <p class="text-muted">"خدمة ممتازة وسريعة جداً، تم تفعيل خصم الـ 50% على خطي الأرضي من وي في أقل من يوم!"</p>
+                        <h6 class="text-gold mb-0 mt-3">- محمد أ.</h6>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white p-4 h-100 testimonial-card">
+                        <p class="text-muted">"كنت متخوف في البداية لكن التعامل محترم جداً والتجديد القادم بنصف السعر فعلاً."</p>
+                        <h6 class="text-gold mb-0 mt-3">- أحمد م.</h6>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white p-4 h-100 testimonial-card">
+                        <p class="text-muted">"عرض الصحاب وفر معايا ومع زمايلي في السكن كتير، شكراً لـ Home Net على المصداقية."</p>
+                        <h6 class="text-gold mb-0 mt-3">- كريم س.</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faqs" class="py-5">
+        <div class="container" style="max-width: 800px;">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">الأسئلة <span class="text-blue">الشائعة</span></h2>
+            </div>
+            <div class="accordion accordion-flush" id="faqAccordion">
+                <div class="accordion-item bg-dark text-white">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            ما هي المستندات المطلوبة للتفعيل؟
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body text-muted">
+                            المطلوب عادةً لإتمام التفعيل هو: صورة البطاقة الشخصية (وجه وضهر)، رقم الخط الأرضي، والرقم المرتبط بالخط الأرضي للمتابعة.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item bg-dark text-white">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                            كم تستغرق عملية تفعيل العرض؟
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body text-muted">
+                            يتم تفعيل العروض والخصومات بشكل رسمي على خطك خلال 24 ساعة عمل كحد أقصى.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item bg-dark text-white">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                            هل يشترط وجود شروط معينة في الخط الأرضي؟
+                        </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body text-muted">
+                            نعم، لضمان قبول العرض يشترط مرور سنة كاملة على وجود الخط بالشركة الحالية، وعدم وجود أي مديونيات أو فواتير متأخرة على الخط.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4 bg-dark text-center border-top border-secondary">
+        <div class="container">
+            <h5 class="fw-bold text-white mb-2">Home Net | عالمك الرقمي</h5>
+            <p class="text-muted small mb-3">جميع الحقوق محفوظة &copy; 2026</p>
+            <div class="social-links">
+                <a href="https://wa.me/201550023008" class="text-white mx-2"><i class="fa-brands fa-whatsapp fa-lg"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fa-brands fa-facebook fa-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/201550023008" class="whatsapp-float" target="_blank">
+        <i class="fa-brands fa-whatsapp my-float"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
