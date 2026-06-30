@@ -1,241 +1,187 @@
-/* ==========================
-   Home Net V3
-========================== */
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Cairo',sans-serif;
-scroll-behavior:smooth;
-}
-
-body{
-background:#08111f;
-color:#fff;
-line-height:1.8;
-overflow-x:hidden;
-}
-
-/* Navbar */
-
-.navbar{
-background:rgba(10,20,35,.95);
-backdrop-filter:blur(10px);
-padding:15px 0;
-box-shadow:0 5px 20px rgba(0,0,0,.3);
-}
-
-.navbar-brand{
-font-size:28px;
-font-weight:800;
-}
-
-.nav-link{
-color:#fff !important;
-margin-right:18px;
-font-weight:600;
-transition:.3s;
-}
-
-.nav-link:hover{
-color:#FFD54A !important;
-}
-
-/* Hero */
-
-.hero{
-
-min-height:100vh;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-text-align:center;
-
-background:
-linear-gradient(rgba(5,15,30,.82),rgba(5,15,30,.88)),
-url("assets/hero.jpg");
-
-background-size:cover;
-
-background-position:center;
-
-padding:100px 20px;
-
-}
-
-.hero h1{
-
-font-size:70px;
-
-font-weight:800;
-
-color:#FFD54A;
-
-margin-bottom:15px;
-
-}
-
-.hero h2{
-
-font-size:34px;
-
-margin-bottom:20px;
-
-}
-
-.hero p{
-
-max-width:700px;
-
-margin:auto;
-
-font-size:20px;
-
-color:#ddd;
-
-}
-
-.hero-buttons{
-
-margin-top:40px;
-
-display:flex;
-
-justify-content:center;
-
-gap:20px;
-
-flex-wrap:wrap;
-
-}
-
-/* Buttons */
-
-.btn{
-
-border-radius:50px;
-
-padding:14px 35px;
-
-font-weight:bold;
-
-transition:.3s;
-
-}
-
-.btn-warning{
-
-background:#FFD54A;
-
-border:none;
-
-color:#111;
-
-}
-
-.btn-warning:hover{
-
-transform:translateY(-3px);
-
-}
-
-.btn-success:hover{
-
-transform:translateY(-3px);
-
-}
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
+/* الألوان الأساسية المتفق عليها الهوية الفاخرة */
+:root {
+    --bg-dark: #0b0b0b;
+    --bg-semi-dark: #121212;
+    --gold: #d4af37;
+    --gold-hover: #bfa030;
+    --blue: #007bff;
+    --text-muted: #a0a0a0;
 }
 
 body {
-  background: #f5f7fb;
-  color: #111;
+    background-color: var(--bg-dark);
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
 }
 
-/* Header */
-header {
-  background: linear-gradient(135deg, #e60000, #ff4d4d);
-  color: #fff;
-  padding: 20px;
-  text-align: center;
+.text-gold { color: var(--gold) !important; }
+.text-blue { color: var(--blue) !important; }
+.text-light-muted { color: #cccccc; }
+.bg-semi-dark { background-color: var(--bg-semi-dark); }
+
+/* التعديلات الفاخرة للـ Navbar */
+.navbar {
+    background-color: rgba(11, 11, 11, 0.95) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+    padding: 15px 0;
+    transition: all 0.3s ease;
+}
+.navbar-brand { font-size: 1.4rem; }
+.nav-link {
+    color: #ffffff !important;
+    margin: 0 5px;
+    font-weight: 500;
+}
+.nav-link:hover, .nav-link.active {
+    color: var(--gold) !important;
+}
+.dropdown-menu {
+    border: 1px solid rgba(212, 175, 55, 0.2);
+}
+.dropdown-menu-item {
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    color: #fff;
+    text-decoration: none;
+    text-align: right;
+}
+.dropdown-menu-item:hover {
+    background-color: var(--gold);
+    color: var(--bg-dark);
 }
 
-header h1 {
-  font-size: 24px;
+/* قسم الـ Hero */
+.hero-section {
+    height: 80vh;
+    background: linear-gradient(135deg, rgba(11,11,11,0.95) 40%, rgba(0,123,255,0.15) 100%), url('assets/hero.jpg') center/cover no-repeat;
+    margin-top: 70px;
 }
 
-/* Offers Section */
-.container {
-  width: 90%;
-  margin: 20px auto;
+/* الأزرار الاحترافية */
+.btn-gold {
+    background-color: var(--gold);
+    color: var(--bg-dark);
+    font-weight: 600;
+    border: 1px solid var(--gold);
+    transition: all 0.3s ease;
+}
+.btn-gold:hover {
+    background-color: var(--gold-hover);
+    color: var(--bg-dark);
+    transform: translateY(-2px);
+}
+.btn-outline-gold {
+    color: var(--gold);
+    border: 1px solid var(--gold);
+    font-weight: 500;
+}
+.btn-gold:hover {
+    background-color: var(--gold);
+    color: var(--bg-dark);
+}
+.btn-outline-blue {
+    color: #ffffff;
+    border: 1px solid var(--blue);
+}
+.btn-outline-blue:hover {
+    background-color: var(--blue);
+    color: #ffffff;
 }
 
-.card {
-  background: #fff;
-  padding: 15px;
-  margin-bottom: 15px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  border-right: 5px solid #e60000;
+/* تصميم البطاقات والعروض */
+.offer-card {
+    background-color: var(--bg-semi-dark);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.offer-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--gold);
+}
+.network-badge {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+.badge-vodafone { background-color: #e60000; color: #fff; }
+.badge-orange { background-color: #ff6600; color: #fff; }
+.badge-we { background-color: #5c2c90; color: #fff; }
+.badge-et { background-color: #7da923; color: #fff; }
+.badge-digital { background-color: var(--blue); color: #fff; }
+
+/* خدمات */
+.service-box {
+    background: rgba(255,255,255,0.02);
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.05);
+    transition: all 0.3s ease;
+}
+.service-box:hover {
+    background: rgba(212,175,55,0.05);
 }
 
-.card h2 {
-  color: #e60000;
-  margin-bottom: 8px;
+.border-gold-dash {
+    border: 2px dashed var(--gold);
 }
 
-.card p {
-  margin: 5px 0;
-  font-size: 15px;
+/* التقييمات */
+.testimonial-card {
+    border-left: 4px solid var(--gold) !important;
 }
 
-/* Button */
-.btn {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 15px;
-  background: #e60000;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 8px;
+/* الأكورديون للأسئلة الشائعة */
+.accordion-item {
+    border: 1px solid rgba(255,255,255,0.05) !important;
+    margin-bottom: 10px;
+    border-radius: 8px !important;
+    overflow: hidden;
+}
+.accordion-button:not(.collapsed) {
+    background-color: var(--bg-semi-dark);
+    color: var(--gold);
+    box-shadow: none;
+}
+.accordion-button::after {
+    filter: invert(1);
 }
 
-.btn:hover {
-  background: #cc0000;
+/* زر واتساب العائم الفاخر */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    left: 30px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    color: #fff;
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  padding: 15px;
-  margin-top: 20px;
-  background: #111;
-  color: #fff;
-  }
-// تأثير بسيط عند الضغط على زر العرض
-document.addEventListener("DOMContentLoaded", function () {
-  const buttons = document.querySelectorAll(".btn");
-
-  buttons.forEach(btn => {
-    btn.addEventListener("click", function (e) {
-      e.preventDefault();
-
-      // رسالة تأكيد بسيطة
-      alert("تم اختيار العرض بنجاح 🔥 هنكلمك قريب للتفعيل");
-
-      // تأثير بصري خفيف
-      btn.innerText = "تم الاختيار ✔";
-      btn.style.background = "#28a745";
-    });
-  });
-});
+/* تأثيرات حركية خفيفة */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+.animate-pulse {
+    animation: pulse 2s infinite;
+}
