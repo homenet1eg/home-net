@@ -16,13 +16,30 @@ body {
     border-bottom: 2px solid var(--gold);
 }
 
-.hero-section {
-    height: 60vh;
-    background-color: #222;
-    color: white;
-    margin-top: 56px;
-    display: flex;
-    align-items: center;
+.hero-section{
+    min-height:100vh;
+    background:linear-gradient(135deg,#0b0b0b,#171717);
+    padding-top:100px;
+}
+
+.hero-section img{
+    animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-12px);
+}
+
+100%{
+transform:translateY(0);
+}
+
 }
 
 /* 3. تنسيق الكروت والشعارات */
