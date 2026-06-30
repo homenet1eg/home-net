@@ -3,41 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>باقات أورنج | Home Net</title>
-    <link class="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="../style.css">
+    <title>عروض أورنج - RockSsa Net</title>
+    <style>
+        :root {
+            --bg-dark: #0b0c10;
+            --card-bg: #1f2833;
+            --orange: #ff7900; /* لون أورنج البرتقالي */
+            --text-light: #c5c6c7;
+            --white: #ffffff;
+        }
+        body {
+            background-color: var(--bg-dark);
+            color: var(--white);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header-title {
+            text-align: center;
+            color: var(--orange);
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px rgba(255, 121, 0, 0.3);
+        }
+        .brand-sub {
+            text-align: center;
+            color: var(--text-light);
+            margin-bottom: 30px;
+        }
+
+        /* قسم باقات البريميوم */
+        .section-title {
+            color: var(--orange);
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--card-bg);
+            padding-bottom: 8px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid #2f3e46;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--orange);
+            box-shadow: 0 5px 15px rgba(255, 121, 0, 0.2);
+        }
+        .card h3 { margin-top: 0; font-size: 1.4rem; color: var(--white); }
+        .card .details { color: var(--orange); font-size: 1.5rem; font-weight: bold; margin: 10px 0; }
+        .card .price { font-size: 1.8rem; font-weight: bold; margin-bottom: 15px; }
+        .card .note { font-size: 0.9rem; color: var(--text-light); margin-bottom: 15px; background: rgba(0,0,0,0.2); padding: 5px; border-radius: 4px; }
+        
+        .btn-order {
+            display: inline-block;
+            width: 100%;
+            padding: 10px 0;
+            background-color: var(--orange);
+            color: #000;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+        .btn-order:hover { background-color: #ff9933; }
+
+        /* جدول عرض الخط الجديد */
+        .table-container {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #2f3e46;
+            overflow-x: auto;
+        }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th { color: var(--orange); padding: 12px; text-align: right; border-bottom: 2px solid #2f3e46; }
+        td { padding: 12px; border-bottom: 1px solid #2f3e46; color: var(--white); }
+    </style>
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="../index.html">
-                <i class="fa-solid fa-bolt text-gold me-2"></i>
-                <span class="fw-bold text-white">Home <span class="text-gold">Net</span></span>
-            </a>
-            <div class="ms-auto"><a href="../index.html" class="btn btn-outline-gold btn-sm">العودة للرئيسية</a></div>
-        </div>
-    </nav>
+<div class="container">
+    <h1 class="header-title">🟠 عروض وباقات أورنج</h1>
+    <p class="brand-sub">عالمك الرقمي - تجربة بريميوم حقيقية</p>
 
-    <div class="container mt-5 pt-5 text-center">
-        <div class="badge-orange p-3 d-inline-block rounded-circle my-4 animate-pulse"><i class="fa-solid fa-wifi fa-3x"></i></div>
-        <h1 class="fw-bold text-white mb-3">عروض إنترنت أورنج المنزلي</h1>
-        <p class="text-muted mb-5">وفّر ذكي مع أقوى خصومات باقات الأونلاين والـ DSL الأرضي من أورنج.</p>
-
-        <div class="row g-4 justify-content-center">
-            <div class="col-md-5">
-                <div class="card offer-card p-4">
-                    <h3 class="text-gold fw-bold">باقة الخصم السنوي</h3>
-                    <p class="text-white-50">تفعيل فوري آمن ومستقر طوال فترة الاستخدام وبأقل الفواتير.</p>
-                    <a href="https://wa.me/201550023008?text=أريد%20تفعيل%20باقة%20أورنج%20المنزلية" target="_blank" class="btn btn-gold w-100 py-2 mt-4"><i class="fa-brands fa-whatsapp me-2"></i>اطلب العرض الآن</a>
-                </div>
-            </div>
-        </div>
+    <h2 class="section-title">💎 باقات أورنج بريميوم (Orange Premium)</h2>
+    <div class="grid-container">
+        <div class="card"><h3>باقة 10 جيجا</h3><div class="details">2000 دقيقة</div><div class="price">280 جنيه</div><div class="note">التفعيل بالرقم فقط وعادي لو مستلف</div><a href="https://wa.me/201550023008?text=أريد%20باقة%20أورنج%2010%20جيجا" class="btn-order" target="_blank">اطلب الآن</a></div>
+        <div class="card"><h3>باقة 14 جيجا</h3><div class="details">2000 دقيقة</div><div class="price">330 جنيه</div><div class="note">التفعيل بالرقم فقط وعادي لو مستلف</div><a href="https://wa.me/201550023008?text=أريد%20باقة%20أورنج%2014%20جيجا" class="btn-order" target="_blank">اطلب الآن</a></div>
+        <div class="card"><h3>باقة 20 جيجا</h3><div class="details">2000 دقيقة</div><div class="price">400 جنيه</div><div class="note">التفعيل بالرقم فقط وعادي لو مستلف</div><a href="https://wa.me/201550023008?text=أريد%20باقة%20أورنج%2020%20جيجا" class="btn-order" target="_blank">اطلب الآن</a></div>
+        <div class="card"><h3>باقة 30 جيجا</h3><div class="details">2000 دقيقة</div><div class="price">500 جنيه</div><div class="note">التفعيل بالرقم فقط وعادي لو مستلف</div><a href="https://wa.me/201550023008?text=أريد%20باقة%20أورنج%2030%20جيجا" class="btn-order" target="_blank">اطلب الآن</a></div>
     </div>
 
-    <a href="https://wa.me/201550023008" class="whatsapp-float" target="_blank"><i class="fa-brands fa-whatsapp my-float"></i></a>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <h2 class="section-title">🎁 عرض الخط الجديد (23,000 وحدة)</h2>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>الشرح</th>
+                    <th>قيمة الشحن / الرصيد</th>
+                    <th>الوحدات</th>
+                    <th>المطلوب</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>الشهر الأول</td><td>200 جنيه كاش (جاهز)</td><td>23,000 وحدة</td><td>صورة البطاقة لتسجيل الخط</td></tr>
+                <tr><td>الشهر الثاني</td><td>40 جنيه رصيد (#2020#)</td><td>23,000 وحدة</td><td>استبدال شريحة من الفرع</td></tr>
+                <tr><td>الشهر الثالث</td><td>80 جنيه رصيد</td><td>23,000 وحدة</td><td>-</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
 </body>
 </html>
-
