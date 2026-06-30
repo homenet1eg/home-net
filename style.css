@@ -81,3 +81,9 @@ transform:translateY(0);
 .btn-outline-gold { border: 2px solid var(--gold); color: var(--gold); }
 .btn-outline-gold:hover { background-color: var(--gold); color: white; }
 .btn-gold { background-color: var(--gold); color: white; }
+.hero-section img{
+    max-width:100%;
+    border:2px solid rgba(212,175,55,.35);
+    border-radius:20px;
+    box-shadow:0 0 30px rgba(212,175,55,.2);
+} 
