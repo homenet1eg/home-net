@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>عروض اتصالات - Home Net</title>
+    <title>عروض اتصالات - RockSsa Net</title>
     <style>
         :root {
             --bg-dark: #0b0c10;
             --card-bg: #1f2833;
-            --neon-green: #00A14B; /* لون اتصالات المميز */
+            --neon-green: #00A14B;
             --text-light: #c5c6c7;
             --white: #ffffff;
         }
@@ -58,12 +58,8 @@
             gap: 8px;
             transition: all 0.3s ease;
         }
-        .tab-btn i {
-            font-size: 1.8rem;
-        }
-        .tab-btn:hover {
-            border-color: var(--neon-green);
-        }
+        .tab-btn i { font-size: 1.8rem; }
+        .tab-btn:hover { border-color: var(--neon-green); }
         .tab-btn.active {
             background-color: var(--neon-green);
             border-color: var(--neon-green);
@@ -75,9 +71,7 @@
             display: none;
             animation: fadeIn 0.5s ease;
         }
-        .tab-content.active {
-            display: block;
-        }
+        .tab-content.active { display: block; }
 
         /* بوكس الشروط والمميزات */
         .info-box {
@@ -89,6 +83,13 @@
         }
         .info-box h4 { margin: 0 0 10px 0; color: var(--neon-green); font-size: 1.3rem; }
         .info-box ul { margin: 0; padding-right: 20px; color: var(--text-light); line-height: 1.6; }
+        .tax-note {
+            text-align: center;
+            color: #ff4d4d;
+            font-weight: bold;
+            margin-top: 15px;
+            font-size: 1.1rem;
+        }
 
         /* شبكة الكروت */
         .grid-container {
@@ -140,39 +141,40 @@
 
 <div class="container">
     <h1 class="header-title">⚡ عروض وباقات اتصالات e&</h1>
-    <p class="brand-sub">Home Net عالمك الرقمي - اختر العرض المناسب لك</p>
+    <p class="brand-sub">عالمك الرقمي - اختر العرض المناسب لك</p>
 
-    <!-- 3 أيقونات تفاعلية لكل عرض -->
+    <!-- 3 أيقونات تفاعلية لكل عرض بناءً على التعديلات -->
     <div class="tabs-container">
         <button class="tab-btn active" onclick="openTab(event, 'offer50')">
             <span>🎁</span>
-            عرض الـ 50% والضعف
+            عرض الكنسلة (خصم 50% والضعف)
         </button>
         <button class="tab-btn" onclick="openTab(event, 'offerWeekly')">
             <span>🚀</span>
-            الضعف الأسبوعي
+            حكاية إنترنت 
         </button>
         <button class="tab-btn" onclick="openTab(event, 'basicSystem')">
             <span>📊</span>
-            النظام الأساسي
+            حكاية ميكسات
         </button>
     </div>
 
-    <!-- العرض الأول: 50% وضغف الباقة -->
+    <!-- 1. عرض الكنسلة (عرض الخصم 50% والضعف) -->
     <div id="offer50" class="tab-content active">
         <div class="info-box">
-            <h4>💡 مميزات وشروط عرض الـ 50% (إنترنت وميكسات)</h4>
+            <h4>💡 التفاصيل والشروط لعرض الكنسلة:</h4>
             <ul>
-                <li><strong>المميزات:</strong> تحصل على ضعف الميجات أو الميكسات المحددة بالكامل مجاناً.</li>
-                <li><strong>مدة العرض:</strong> العرض مستمر وثابت معك لمدة 6 شهور متتالية.</li>
-                <li><strong>الشروط:</strong> رسوم تفعيل هذا العرض هي 250 جنيه فقط لمرة واحدة عند الاشتراك.</li>
-                <li><strong>هدايا إضافية:</strong> باقات الإنترنت شاملة 600 دقيقة هدية مجانية.</li>
+                <li><strong>التفاصيل:</strong> الأسعار وعدد الجيجات الموضحة بالأسفل مطبقة ومفعّلة فعلياً.</li>
+                <li><strong>الدقائق والميجات:</strong> شامل 600 دقيقة هدية، ولو خلصت الـ 600 دقيقة يمكنك التحويل من الميجات إلى وحدات بسهولة.</li>
+                <li><strong>الاستمرارية:</strong> العرض مستمر وثابت معك لمدة 6 شهور متتالية.</li>
+                <li><strong>طريقة الدفع:</strong> أول مرة حضرتك بتدفع تكلفة العرض وتكلفة الباقة معاً، وبعد ذلك يتم التجديد شهرياً بالسعر الموضح للباقة فقط.</li>
+                <li><strong>المطلوب:</strong> توفير الرقم، ويشترط ألا يكون هناك أي مديونية على الخط نهائياً، وأن يكون الخط مسجلاً باسمك.</li>
             </ul>
+            <div class="tax-note">📢 ملحوظة: جميع الأسعار الموضحة بالأسفل شاملة الضريبة بالكامل.</div>
         </div>
         
-        <h3 style="color:var(--neon-green); margin-bottom:15px;">باقات الإنترنت (عرض الـ 50%):</h3>
+        <h3 style="color:var(--neon-green); margin-bottom:15px;">باقات الإنترنت (عرض الكنسلة):</h3>
         <div class="grid-container">
-            <!-- الكروت مجتمعة لتوفير المساحة -->
             <div class="card"><h3>باقة إنترنت</h3><div class="details">2,500 ميجا</div><div class="price">35 <span>جنية</span></div><a href="https://wa.me/201550023008?text=أريد%20باقة%202500%20ميجا" class="btn-order" target="_blank">اطلب الآن</a></div>
             <div class="card"><h3>باقة إنترنت</h3><div class="details">4,400 ميجا</div><div class="price">45 <span>جنية</span></div><a href="https://wa.me/201550023008?text=أريد%20باقة%204400%20ميجا" class="btn-order" target="_blank">اطلب الآن</a></div>
             <div class="card"><h3>باقة إنترنت</h3><div class="details">6,500 ميجا</div><div class="price">60 <span>جنية</span></div><a href="https://wa.me/201550023008?text=أريد%20باقة%206500%20ميجا" class="btn-order" target="_blank">اطلب الآن</a></div>
@@ -187,7 +189,7 @@
             <div class="card"><h3>باقة VIP</h3><div class="details">100,000 ميجا</div><div class="price">450 <span>جنية</span></div><a href="https://wa.me/201550023008?text=أريد%20باقة%20100000%20ميجا" class="btn-order" target="_blank">اطلب الآن</a></div>
         </div>
 
-        <h3 style="color:var(--neon-green); margin: 30px 0 15px 0;">باقات حكاية ميكسات (عرض الـ 50%):</h3>
+        <h3 style="color:var(--neon-green); margin: 30px 0 15px 0;">باقات حكاية ميكسات (عرض الكنسلة):</h3>
         <div class="grid-container">
             <div class="card"><h3>حكاية ميكس</h3><div class="details">3,700 ميكس</div><div class="price">40 <span>جنية</span></div><a href="https://wa.me/201550023008?text=أريد%20ميكس%203700" class="btn-order" target="_blank">اطلب الآن</a></div>
             <div class="card"><h3>حكاية ميكس</h3><div class="details">5,200 ميكس</div><div class="price">50 <span>جنية</span></div><a href="https://wa.me/201550023008?text=أريد%20ميكس%205200" class="btn-order" target="_blank">اطلب الآن</a></div>
@@ -198,34 +200,36 @@
         </div>
     </div>
 
-    <!-- العرض الثاني: الضعف الأسبوعي -->
+    <!-- 2. الضعف الأسبوعي (بدون كلمة حكاية إنترنت) -->
     <div id="offerWeekly" class="tab-content">
         <div class="info-box">
-            <h4>💡 مميزات وشروط باقات حكاية إنترنت (الضعف الأسبوعي المباشر)</h4>
+            <h4>💡 تفاصيل وشروط عروض الضعف الأسبوعي:</h4>
             <ul>
-                <li><strong>المميزات:</strong> باقات إنترنت تمنحك ضعف الباقة تلقائياً وبشكل مباشر مجاناً.</li>
-                <li><strong>الشروط:</strong> العرض يتم تفعيله أسبوعياً ومباشرة بدون رسوم تفعيل إضافية كبيرة ومخفية.</li>
-                <li>مناسبة جداً للاستخدام الكثيف والمؤقت للإنترنت بجودة وثبات عالي.</li>
+                <li><strong>التفعيل:</strong> تفعيل فوري ومباشر بالرقم فقط.</li>
+                <li><strong>المديونية:</strong> يشترط ألا يكون عليك مديونية نهائياً على الخط.</li>
+                <li><strong>المدة:</strong> الباقة الأساسية مدتها شهر كامل، والضعف الممنوح مدته أسبوع.</li>
             </ul>
+            <div class="tax-note">📢 ملحوظة: جميع الأسعار الموضحة بالأسفل شاملة الضريبة بالكامل.</div>
         </div>
         <div class="grid-container">
-            <div class="card"><h3>حكاية إنترنت 6.5G</h3><div class="details">3250 + 3250 ميجا</div><div class="price">135 <span>جنية</span></div><a href="https://wa.me/201550023008?text=أريد%20ضعف%20أسبوعي%20135ج" class="btn-order" target="_blank">اطلب الآن</a></div>
-            <div class="card"><h3>حكاية إنترنت 9.5G</h3><div class="details">4750 + 4750 ميجا</div><div class="price">165 <span>جنية</span></div><a href="https://wa.me/201550023008?text=أريد%20ضعف%20أسبوعي%20165ج" class="btn-order" target="_blank">اطلب الآن</a></div>
-            <div class="card"><h3>حكاية إنترنت 15.7G</h3><div class="details">7850 + 7850 ميجا</div><div class="price">240 <span>جنية</span></div><a href="https://wa.me/201550023008?text=أريد%20ضعف%20أسبوعي%20240ج" class="btn-order" target="_blank">اطلب الآن</a></div>
-            <div class="card"><h3>حكاية إنترنت 23G</h3><div class="details">11500 + 11500 ميجا</div><div class="price">290 <span>جنية</span></div><a href="https://wa.me/201550023008?text=أريد%20ضعف%20أسبوعي%20290ج" class="btn-order" target="_blank">اطلب الآن</a></div>
-            <div class="card"><h3>حكاية إنترنت 30G</h3><div class="details">15000 + 15000 ميجا</div><div class="price">360 <span>جنية</span></div><a href="https://wa.me/201550023008?text=أريد%20ضعف%20أسبوعي%20360ج" class="btn-order" target="_blank">اطلب الآن</a></div>
+            <div class="card"><h3>باقة 6.5G</h3><div class="details">3250 + 3250 ميجا</div><div class="price">135 <span>جنية</span></div><a href="https://wa.me/201550023008?text=أريد%20ضعف%20أسبوعي%20135ج" class="btn-order" target="_blank">اطلب الآن</a></div>
+            <div class="card"><h3>باقة 9.5G</h3><div class="details">4750 + 4750 ميجا</div><div class="price">165 <span>جنية</span></div><a href="https://wa.me/201550023008?text=أريد%20ضعف%20أسبوعي%20165ج" class="btn-order" target="_blank">اطلب الآن</a></div>
+            <div class="card"><h3>باقة 15.7G</h3><div class="details">7850 + 7850 ميجا</div><div class="price">240 <span>جنية</span></div><a href="https://wa.me/201550023008?text=أريد%20ضعف%20أسبوعي%20240ج" class="btn-order" target="_blank">اطلب الآن</a></div>
+            <div class="card"><h3>باقة 23G</h3><div class="details">11500 + 11500 ميجا</div><div class="price">290 <span>جنية</span></div><a href="https://wa.me/201550023008?text=أريد%20ضعف%20أسبوعي%20290ج" class="btn-order" target="_blank">اطلب الآن</a></div>
+            <div class="card"><h3>باقة 30G</h3><div class="details">15000 + 15000 ميجا</div><div class="price">360 <span>جنية</span></div><a href="https://wa.me/201550023008?text=أريد%20ضعف%20أسبوعي%20360ج" class="btn-order" target="_blank">اطلب الآن</a></div>
         </div>
     </div>
 
-    <!-- العرض الثالث: النظام الأساسي -->
+    <!-- 3. حكاية ميكسات (النظام الأساسي سابقاً) -->
     <div id="basicSystem" class="tab-content">
         <div class="info-box">
-            <h4>💡 مميزات وشروط حكاية ميكس (النظام الأساسي)</h4>
+            <h4>💡 تفاصيل وشروط باقات حكاية ميكسات:</h4>
             <ul>
-                <li>هذا هو النظام الرسمي والأساسي العادي لخطوط اتصالات بدون أي عروض إضافية أو خصومات.</li>
-                <li>يتم المحاسبة بأسعار الميكسات الرسمية للشركة.</li>
-                <li>مناسب للعملاء الذين يفضلون الاستمرارية على الأنظمة التقليدية دون الدخول في عروض ترويجية مؤقتة.</li>
+                <li><strong>التفعيل:</strong> تفعيل فوري ومباشر بالرقم فقط.</li>
+                <li><strong>المديونية:</strong> يشترط ألا يكون عليك مديونية نهائياً على الخط.</li>
+                <li><strong>المدة:</strong> الباقة الأساسية مدتها شهر كامل، والضعف الممنوح مدته أسبوع.</li>
             </ul>
+            <div class="tax-note">📢 ملحوظة: جميع الأسعار الموضحة بالأسفل شاملة الضريبة بالكامل.</div>
         </div>
         <div class="grid-container">
             <div class="card"><h3>حكاية ميكس 5600</h3><div class="details">5,600 ميكس</div><div class="price">130 <span>جنية</span></div><a href="https://wa.me/201550023008?text=أريد%20ميكس%20اساسي%20130ج" class="btn-order" target="_blank">اطلب الآن</a></div>
