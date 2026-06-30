@@ -368,3 +368,14 @@ footer a:hover{
     color:var(--gold);
 
 }
+.hero-banner{
+    max-width:100%;
+    border-radius:22px;
+    border:2px solid rgba(212,175,55,.35);
+    box-shadow:0 0 35px rgba(212,175,55,.25);
+    transition:.4s;
+}
+
+.hero-banner:hover{
+    transform:scale(1.02);
+} 
